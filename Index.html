@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GrokPromo.com - Unleash AI-driven marketing insights with Grok. Try our tools, read tips, and join our mission to donate 51% of profits to charity.">
+    <title>GrokPromo - AI-Powered Marketing Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .circuit-bg {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none" stroke="#E5E7EB" stroke-width="0.5"><path d="M0 50h50v50h50V50h50v50h50"/><path d="M50 0v50h50V0"/><path d="M0 150h50v50h50v-50h50v50h50"/></svg>');
+            background-repeat: repeat;
+            opacity: 0.1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-6 circuit-bg">
+        <div class="container mx-auto flex items-center">
+            <svg class="w-16 h-16 mr-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="40" fill="white" stroke="#1E90FF" stroke-width="4"/>
+                <path d="M50 30 Q60 20 70 30 Q60 40 50 30 Q40 40 30 30 Q40 20 50 30" fill="#1E90FF"/>
+                <text x="30" y="75" font-family="Montserrat, sans-serif" font-size="20" font-weight="bold" fill="#1E90FF">G</text>
+                <text x="10" y="90" font-family="Montserrat, sans-serif" font-size="16" font-weight="bold" fill="#1E90FF">Promo</text>
+            </svg>
+            <div>
+                <h1 class="text-3xl font-bold">GrokPromo.com</h1>
+                <p class="text-lg">AI-Powered Marketing Insights</p>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto p-6">
+        <section class="text-center py-12 bg-white rounded-lg shadow-md">
+            <h2 class="text-4xl font-semibold text-gray-800">Unleash Your Potential with Grok</h2>
+            <p class="mt-4 text-lg text-gray-600">Discover AI-driven marketing tips, tools, and insights to boost your business. 51% of profits donated to <a href="https://code.org" class="text-blue-600 underline" target="_blank">Code.org</a>.</p>
+            <div class="mt-6">
+                <input id="queryInput" type="text" placeholder="Ask Grok a marketing question..." class="p-3 w-full max-w-md border rounded-lg">
+                <button id="askGrok" class="mt-4 bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600">Ask Grok</button>
+            </div>
+            <p id="response" class="mt-4 text-gray-700 hidden">Grok's answer will appear here!</p>
+        </section>
+        <section class="mt-12">
+            <h3 class="text-2xl font-semibold text-gray-800 text-center">Why GrokPromo?</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-bold">AI Insights</h4>
+                    <p class="mt-2 text-gray-600">Get instant marketing strategies and content ideas tailored to your needs.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-bold">Interactive Tools</h4>
+                    <p class="mt-2 text-gray-600">Try our AI-powered query tool for real-time answers and inspiration.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-bold">Give Back</h4>
+                    <p class="mt-2 text-gray-600">51% of profits support Code.org’s mission for computer science education.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <p>© 2025 GrokPromo.com. Powered by Grok, created by xAI.</p>
+        <p><a href="/about" class="underline">About</a> | <a href="/blog" class="underline">Blog</a> | <a href="https://code.org" class="underline" target="_blank">Our Charity</a></p>
+    </footer>
+    <script>
+        document.getElementById('askGrok').addEventListener('click', () => {
+            const query = document.getElementById('queryInput').value;
+            const response = document.getElementById('response');
+            response.classList.remove('hidden');
+            response.textContent = query ? `Grok says: Thanks for asking "${query}"! This is a demo—imagine my full AI insights here!` : `Please enter a question!`;
+        });
+    </script>
+</body>
+</html>
