@@ -62,12 +62,16 @@
         <p><a href="/about" class="underline">About</a> | <a href="/blog" class="underline">Blog</a> | <a href="https://code.org" class="underline" target="_blank">Our Charity</a></p>
     </footer>
     <script>
-        document.getElementById('askGrok').addEventListener('click', () => {
-            const query = document.getElementById('queryInput').value;
-            const response = document.getElementById('response');
-            response.classList.remove('hidden');
-            response.textContent = query ? `Grok says: Thanks for asking "${query}"! This is a demo—imagine my full AI insights here!` : `Please enter a question!`;
-        });
-    </script>
-</body>
-</html>
+    document.getElementById('askGrok').addEventListener('click', () => {
+        const query = document.getElementById('queryInput').value.toLowerCase();
+        const response = document.getElementById('response');
+        response.classList.remove('hidden');
+        const answers = {
+            "marketing tips": "Grok says: Start with social media ads and SEO keywords—great for any business!",
+            "photography business": "Grok says: Focus on Instagram ads and a portfolio site for wedding photography!",
+            "content ideas": "Grok says: Try blog posts or video tutorials to engage your audience.",
+            "": "Grok says: Please enter a question!"
+        };
+        response.textContent = answers[query] || `Grok says: Thanks for asking "${query}"! Imagine my full AI insights here!`;
+    });
+</script>
