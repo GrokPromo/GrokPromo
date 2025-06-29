@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrokPromo Blog - AI Marketing Tips</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-600 text-white p-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">GrokPromo Blog</h1>
+        </div>
+    </header>
+    <main class="container mx-auto p-6">
+        <section class="mt-12">
+            <article class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h2 class="text-xl font-bold">Viral Moment Prediction Reports: Your Key to Social Media Stardom</h2>
+                <p class="mt-2 text-gray-600">Launch a subscription service to help content creators ride viral trends with exclusive reports. Start today!</p>
+                <a href="/blog/viral-moment-reports" class="text-blue-600 underline">Read More</a>
+            </article>
+            <article class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h2 class="text-xl font-bold">Crafting Your AI-Personalized Career Micro-Plan</h2>
+                <p class="mt-2 text-gray-600">Build a tailored career roadmap with AI-driven insights in under an hour. Perfect for professionals seeking growth!</p>
+                <a href="/blog/career-micro-plan" class="text-blue-600 underline">Read More</a>
+            </article>
+            <article class="bg-white p-6 rounded-lg shadow-md mb-6">
+                <h2 class="text-xl font-bold">5 AI Marketing Hacks</h2>
+                <p class="mt-2 text-gray-600">Learn how AI can supercharge your campaigns with targeted ads, content ideas, and analytics. Start with social media insights!</p>
+                <a href="/blog/hack1" class="text-blue-600 underline">Read More</a>
+            </article>
+            <article class="bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold">Why Grok is Your Marketing Edge</h2>
+                <p class="mt-2 text-gray-600">Discover how Grok’s AI tools give you a competitive advantage with real-time strategies.</p>
+                <a href="/blog/edge" class="text-blue-600 underline">Read More</a>
+            </article>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-6 text-center">
+        <p>© 2025 GrokPromo.com | <a href="/" class="underline">Home</a> | <a href="/about" class="underline">About</a> | 51% of profits donated to <a href="https://theoceancleanup.com" class="underline">The Ocean Cleanup</a></p>
+    </footer>
+</body>
+</html>
