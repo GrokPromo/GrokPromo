@@ -1,135 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>GrokPromo - Ignite Your Brand with AI</title>
- <meta name="description" content="GrokPromo delivers electrifying AI-powered marketing solutions. Join our mission to fuel success and support The Ocean Cleanup with 51% of profits.">
- <meta name="keywords" content="AI marketing, Grok, digital marketing, The Ocean Cleanup, viral trends">
- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
- <style>
- /* Parallax Effect */
- .parallax {
- background-attachment: fixed;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- }
- /* Disable parallax on mobile */
- @media (max-width: 767px) {
- .parallax {
- background-attachment: scroll;
- background-size: cover;
- background-position: center;
- }
- }
- /* Glow Animation */
- @keyframes glow {
- 0%, 100% { box-shadow: 0 0 5px rgba(34, 211, 238, 0.5); }
- 50% { box-shadow: 0 0 20px rgba(34, 211, 238, 0.9); }
- }
- .animate-glow:hover {
- animation: glow 0.6s ease-in-out;
- }
- /* Testimonial Slider */
- .slider {
- display: flex;
- overflow-x: auto;
- scroll-snap-type: x mandatory;
- -webkit-overflow-scrolling: touch;
- }
- .slider > div {
- flex: 0 0 100%;
- scroll-snap-align: start;
- }
- </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrokPromo - Ignite Your Brand with AI</title>
+    <meta name="description" content="GrokPromo delivers electrifying AI-powered marketing solutions. Join our mission to fuel success and support The Ocean Cleanup with 51% of profits.">
+    <meta name="keywords" content="AI marketing, Grok, digital marketing, The Ocean Cleanup, viral trends">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Parallax Effect */
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* Disable parallax on mobile */
+        @media (max-width: 767px) {
+            .parallax {
+                background-attachment: scroll;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        /* Glow Animation */
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 5px rgba(34, 211, 238, 0.5); }
+            50% { box-shadow: 0 0 20px rgba(34, 211, 238, 0.9); }
+        }
+        .animate-glow:hover {
+            animation: glow 0.6s ease-in-out;
+        }
+        /* Ensure button interactivity */
+        .button-link {
+            position: relative;
+            z-index: 10;
+            pointer-events: auto;
+        }
+        /* Testimonial Slider */
+        .slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+        .slider > div {
+            flex: 0 0 100%;
+            scroll-snap-align: start;
+        }
+    </style>
 </head>
 <body class="bg-gray-900 text-white font-sans scroll-smooth">
- <!-- Hero Section with Parallax -->
- <header class="relative parallax h-screen" style="background-image: url('/images/hero-neon.jpg'); background-color: #111827;">
- <div class="absolute inset-0 bg-gradient-to-r from-cyan-900/70 to-magenta-900/70"></div>
- <div class="container mx-auto px-6 h-full flex flex-col justify-center items-center text-center">
- <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-pulse text-cyan-300">
- Ignite Your Brand with GrokPromo
- </h1>
- <p class="text-xl md:text-3xl mb-8 text-lime-200">
- AI-Powered Strategies to Dominate the Digital Scene
- </p>
- <a href="/blog" class="bg-gradient-to-r from-cyan-500 to-magenta-500 text-white px-10 py-4 rounded-full text-xl font-bold hover:from-cyan-600 hover:to-magenta-600 transition duration-300 animate-glow">
- Dive Into Our Blog
- </a>
- </div>
- </header>
+    <!-- Hero Section with Parallax -->
+    <header class="relative parallax h-screen" style="background-image: url('/images/hero-neon.jpg'); background-color: #111827;">
+        <div class="absolute inset-0 bg-gradient-to-r from-cyan-900/70 to-magenta-900/70"></div>
+        <div class="container mx-auto px-6 h-full flex flex-col justify-center items-center text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 animate-pulse text-cyan-300">
+                Ignite Your Brand with GrokPromo
+            </h1>
+            <p class="text-xl md:text-3xl mb-8 text-lime-200">
+                AI-Powered Strategies to Dominate the Digital Scene
+            </p>
+            <a href="/blog" class="bg-gradient-to-r from-cyan-500 to-magenta-500 text-white px-10 py-4 rounded-full text-xl font-bold hover:from-cyan-600 hover:to-magenta-600 transition duration-300 animate-glow button-link cursor-pointer">
+                Dive Into Our Blog
+            </a>
+        </div>
+    </header>
 
- <!-- Mission Section -->
- <section class="container mx-auto px-6 py-20 bg-gray-800">
- <div class="text-center">
- <h2 class="text-4xl md:text-5xl font-bold mb-6 text-cyan-300">Why We’re Epic</h2>
- <p class="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
- GrokPromo fuses AI wizardry with marketing genius to make your brand unstoppable. Powered by Grok, we deliver real-time insights and strategies that hit hard. Plus, <strong>51% of our profits</strong> fuel <a href="https://theoceancleanup.com" class="text-lime-400 underline hover:text-lime-300">The Ocean Cleanup</a> to save our oceans.
- </p>
- <img src="/images/ocean-vibe.jpg" alt="Ocean Cleanup Mission" class="mx-auto mt-6 rounded-xl shadow-2xl max-w-lg transform hover:scale-105 transition duration-300">
- </div>
- </section>
+    <!-- Mission Section -->
+    <section class="container mx-auto px-6 py-20 bg-gray-800">
+        <div class="text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-cyan-300">Why We’re Epic</h2>
+            <p class="text-lg text-gray-200 mb-8 max-w-2xl mx-auto">
+                GrokPromo fuses AI wizardry with marketing genius to make your brand unstoppable. Powered by Grok, we deliver real-time insights and strategies that hit hard. Plus, <strong>51% of our profits</strong> fuel <a href="https://theoceancleanup.com" class="text-lime-400 underline hover:text-lime-300">The Ocean Cleanup</a> to save our oceans.
+            </p>
+            <img src="/images/ocean-vibe.jpg" alt="Ocean Cleanup Mission" class="mx-auto mt-6 rounded-xl shadow-2xl max-w-lg transform hover:scale-105 transition duration-300">
+        </div>
+    </section>
 
- <!-- Features Section -->
- <section class="container mx-auto px-6 py-20">
- <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-lime-300">What We Bring to the Table</h2>
- <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
- <!-- Feature 1 -->
- <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300">
- <img src="/images/viral-buzz.jpg" alt="Viral Trends" class="w-full h-56 object-cover rounded-t-xl mb-4">
- <h3 class="text-2xl font-semibold mb-2 text-cyan-300">Viral Trend Reports</h3>
- <p class="text-gray-200">Ride the next social media wave with AI-driven trend predictions that go viral.</p>
- <a href="/blog/viral-moment-reports" class="text-lime-400 underline mt-4 inline-block hover:text-lime-300">Discover Now</a>
- </div>
- <!-- Feature 2 -->
- <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300">
- <img src="/images/career-vision.jpg" alt="Career Micro-Plan" class="w-full h-56 object-cover rounded-t-xl mb-4">
- <h3 class="text-2xl font-semibold mb-2 text-cyan-300">Career Micro-Plans</h3>
- <p class="text-gray-200">Map your dream career with AI-crafted roadmaps in under an hour.</p>
- <a href="/blog/career-micro-plan" class="text-lime-400 underline mt-4 inline-block hover:text-lime-300">Discover Now</a>
- </div>
- <!-- Feature 3 -->
- <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300">
- <img src="/images/ai-blast.jpg" alt="AI Marketing Hacks" class="w-full h-56 object-cover rounded-t-xl mb-4">
- <h3 class="text-2xl font-semibold mb-2 text-cyan-300">AI Marketing Hacks</h3>
- <p class="text-gray-200">Supercharge your campaigns with cutting-edge AI strategies.</p>
- <a href="/blog/hack1" class="text-lime-400 underline mt-4 inline-block hover:text-lime-300">Discover Now</a>
- </div>
- </div>
- </section>
+    <!-- Features Section -->
+    <section class="container mx-auto px-6 py-20">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-lime-300">What We Bring to the Table</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300">
+                <img src="/images/viral-buzz.jpg" alt="Viral Trends" class="w-full h-56 object-cover rounded-t-xl mb-4">
+                <h3 class="text-2xl font-semibold mb-2 text-cyan-300">Viral Trend Reports</h3>
+                <p class="text-gray-200">Ride the next social media wave with AI-driven trend predictions that go viral.</p>
+                <a href="/blog/viral-moment-reports" class="text-lime-400 underline mt-4 inline-block hover:text-lime-300">Discover Now</a>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300">
+                <img src="/images/career-vision.jpg" alt="Career Micro-Plan" class="w-full h-56 object-cover rounded-t-xl mb-4">
+                <h3 class="text-2xl font-semibold mb-2 text-cyan-300">Career Micro-Plans</h3>
+                <p class="text-gray-200">Map your dream career with AI-crafted roadmaps in under an hour.</p>
+                <a href="/blog/career-micro-plan" class="text-lime-400 underline mt-4 inline-block hover:text-lime-300">Discover Now</a>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl hover:scale-105 transition duration-300">
+                <img src="/images/ai-blast.jpg" alt="AI Marketing Hacks" class="w-full h-56 object-cover rounded-t-xl mb-4">
+                <h3 class="text-2xl font-semibold mb-2 text-cyan-300">AI Marketing Hacks</h3>
+                <p class="text-gray-200">Supercharge your campaigns with cutting-edge AI strategies.</p>
+                <a href="/blog/hack1" class="text-lime-400 underline mt-4 inline-block hover:text-lime-300">Discover Now</a>
+            </div>
+        </div>
+    </section>
 
- <!-- Testimonial Slider -->
- <section class="container mx-auto px-6 py-20 bg-gray-800">
- <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-cyan-300">What Creators Say</h2>
- <div class="slider">
- <div class="p-6 text-center">
- <p class="text-lg italic text-gray-200 max-w-2xl mx-auto">"GrokPromo’s viral reports turned my TikTok game around! I hit 100K views in a week!"</p>
- <p class="mt-4 font-semibold text-lime-400">– Sarah, Content Creator</p>
- </div>
- <div class="p-6 text-center">
- <p class="text-lg italic text-gray-200 max-w-2xl mx-auto">"The AI career plan helped me land my dream job in tech. Absolute game-changer!"</p>
- <p class="mt-4 font-semibold text-lime-400">– Mike, Software Engineer</p>
- </div>
- <div class="p-6 text-center">
- <p class="text-lg italic text-gray-200 max-w-2xl mx-auto">"GrokPromo’s marketing hacks boosted my brand’s engagement by 200%. Unreal!"</p>
- <p class="mt-4 font-semibold text-lime-400">– Emma, Small Business Owner</p>
- </div>
- </div>
- </section>
+    <!-- Testimonial Slider -->
+    <section class="container mx-auto px-6 py-20 bg-gray-800">
+        <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-cyan-300">What Creators Say</h2>
+        <div class="slider">
+            <div class="p-6 text-center">
+                <p class="text-lg italic text-gray-200 max-w-2xl mx-auto">"GrokPromo’s viral reports turned my TikTok game around! I hit 100K views in a week!"</p>
+                <p class="mt-4 font-semibold text-lime-400">– Sarah, Content Creator</p>
+            </div>
+            <div class="p-6 text-center">
+                <p class="text-lg italic text-gray-200 max-w-2xl mx-auto">"The AI career plan helped me land my dream job in tech. Absolute game-changer!"</p>
+                <p class="mt-4 font-semibold text-lime-400">– Mike, Software Engineer</p>
+            </div>
+            <div class="p-6 text-center">
+                <p class="text-lg italic text-gray-200 max-w-2xl mx-auto">"GrokPromo’s marketing hacks boosted my brand’s engagement by 200%. Unreal!"</p>
+                <p class="mt-4 font-semibold text-lime-400">– Emma, Small Business Owner</p>
+            </div>
+        </div>
+    </section>
 
- <!-- CTA Section -->
- <section class="bg-gradient-to-r from-cyan-600 to-magenta-600 py-20 text-center">
- <div class="container mx-auto px-6">
- <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Ready to Rule the Digital World?</h2>
- <p class="text-xl text-gray-200 mb-8">Join the AI revolution with GrokPromo and make waves in marketing!</p>
- <a href="/blog" class="bg-lime-400 text-gray-900 px-10 py-4 rounded-full text-xl font-bold hover:bg-lime-300 transition duration-300 animate-glow">Get Started Now</a>
- </div>
- </section>
+    <!-- CTA Section -->
+    <section class="bg-gradient-to-r from-cyan-600 to-magenta-600 py-20 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">Ready to Rule the Digital World?</h2>
+            <p class="text-xl text-gray-200 mb-8">Join the AI revolution with GrokPromo and make waves in marketing!</p>
+            <a href="/blog" class="bg-lime-400 text-gray-900 px-10 py-4 rounded-full text-xl font-bold hover:bg-lime-300 transition duration-300 animate-glow button-link cursor-pointer">Get Started Now</a>
+        </div>
+    </section>
 
- <footer class="bg-gray-900 py-8 text-center">
- <p class="text-gray-300">© 2025 GrokPromo.com | <a href="/about" class="underline text-cyan-400 hover:text-cyan-300">About</a> | <a href="/blog" class="underline text-cyan-400 hover:text-cyan-300">Blog</a> | 51% of profits donated to <a href="https://theoceancleanup.com" class="underline text-cyan-400 hover:text-cyan-300">The Ocean Cleanup</a></p>
- </footer>
+    <footer class="bg-gray-900 py-8 text-center">
+        <p class="text-gray-300">© 2025 GrokPromo.com | <a href="/about" class="underline text-cyan-400 hover:text-cyan-300">About</a> | <a href="/blog" class="underline text-cyan-400 hover:text-cyan-300">Blog</a> | 51% of profits donated to <a href="https://theoceancleanup.com" class="underline text-cyan-400 hover:text-cyan-300">The Ocean Cleanup</a></p>
+    </footer>
 </body>
 </html>
